@@ -32,7 +32,7 @@ class Game
     when 'banker'
       computer_play
     end
-    
+
     @guess = { color_position_match: 0, color_match: 0 }
 
     judge
@@ -58,6 +58,7 @@ class Game
   private
 
   def computer_play
+    
     @gamepad = []
     4.times do
       @gamepad.push(@@color_bank.sample)
